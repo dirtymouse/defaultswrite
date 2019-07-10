@@ -1,2 +1,2 @@
 # defaultswrite
-Mac OS defaultswrite commands
+Mac OS defaultswrite commands for GUI improvements
