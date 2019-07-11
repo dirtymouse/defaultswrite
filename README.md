@@ -2,28 +2,28 @@
 Mac OS defaultswrite commands for GUI improvements
 
 ## TimeMachine
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+- defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 ## Disable Annoying Alerts
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+- defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 ## Print Dialog Boxes
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+- defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+- defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 ## Disable Application state on Restart or Boot
-defaults write com.apple.loginwindow TALLogoutSavesState -bool false
-defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
+- defaults write com.apple.loginwindow TALLogoutSavesState -bool false
+- defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 
 
-defaults write com.apple.finder CreateDesktop -bool false
+- defaults write com.apple.finder CreateDesktop -bool false
 
 ## Crash Reporter
-defaults write com.apple.CrashReporter DialogType none
+- defaults write com.apple.CrashReporter DialogType none
 
 ## Dock Improvements
-defaults write com.apple.dock tilesize -int 2
-defaults write com.apple.dock pinning -string end
+- defaults write com.apple.dock tilesize -int 2
+- defaults write com.apple.dock pinning -string end
 
 ## GUI Improvements
 - defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
