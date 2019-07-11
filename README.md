@@ -134,3 +134,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 - defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 - defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0.0
 
+## Screen Sharing
+- defaults write com.apple.ScreenSharing controlObserveQuality 2
+- defaults write com.apple.ScreenSharing 'NSToolbar Configuration ControlToolbar' -dict-add 'TB Item Identifiers' '(Scale,Control,Share,Curtain,Capture,FullScreen,GetClipboard,SendClipboard,Quality)'
