@@ -115,6 +115,7 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 ## Better Security
 - defaults write com.apple.screensaver askForPassword -int 1
 - defaults write com.apple.screensaver askForPasswordDelay -int 0
+- sudo defaults write /var/db/locationd/Library/Preferences/ByHost/com.apple.locationd.plist LocationServicesEnabled -bool NO
 
 ## Enable AirDrop over Ethernet and on unsupported Macs
 - defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
