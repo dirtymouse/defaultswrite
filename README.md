@@ -26,7 +26,6 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 - defaults write com.apple.finder NewWindowTarget -string "PfDe"
 - defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
-
 ### Animations
 - defaults write com.apple.finder DisableAllAnimations -bool true
 ### Behaviour
@@ -102,13 +101,12 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 ## Dashboard
 - defaults write com.apple.dashboard mcx-disabled -bool true
 
-## GUI Improvements
-- defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
-- defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
-- defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+## GUI Animations, Improvements
+- defaults write -g com.apple.swipescrolldirection -bool false
+- defaults write -g AppleShowScrollBars -string "Always"
+- defaults write -g AppleEnableMenuBarTransparency -bool false
 - defaults write -g QLPanelAnimationDuration -float 0
 - defaults write -g NSWindowResizeTime -float 0.001
-- defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 - defaults write -g NSScrollAnimationEnabled -bool false
 - defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 - defaults write -g ApplePersistence -bool false
