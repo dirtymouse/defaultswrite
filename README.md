@@ -9,7 +9,7 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.CrashReporter DialogType none
 
 ## Finder Tweaks
-### Desktop Settings
+#### Desktop Settings
 - defaults write com.apple.finder CreateDesktop -bool false
 - defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 - defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
