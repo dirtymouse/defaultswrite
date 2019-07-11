@@ -1,8 +1,9 @@
-# defaultswrite
+# defaultswrite reference
 Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Choose only what you need)
 
 ## TimeMachine
 - defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+- sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int 86400
 
 ## Disable Annoying Pop up Alerts
 - defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -138,9 +139,16 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 - defaults write com.apple.ScreenSharing controlObserveQuality 2
 - defaults write com.apple.ScreenSharing 'NSToolbar Configuration ControlToolbar' -dict-add 'TB Item Identifiers' '(Scale,Control,Share,Curtain,Capture,FullScreen,GetClipboard,SendClipboard,Quality)'
 
-## Disk Space Alerts
+## Disk Space Alerts (use with Caution)
 - defaults write com.apple.diskspaced checkAllVolumes 0
 - defaults write com.apple.diskspaced debugLog 1
 - defaults write com.apple.diskspaced warningInterval 3600
 - defaults write com.apple.diskspaced freeSpaceWarningLevel 1
 - defaults write com.apple.diskspaced minFreeSpace 5
+
+## Resolve Slow Shutdowns (use with Caution)
+- sudo defaults write /System/Library/LaunchDaemons/com.apple.coreservices.appleevents ExitTimeOut -int 1
+- sudo defaults write /System/Library/LaunchDaemons/com.apple.securityd ExitTimeOut -int 1
+- sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder ExitTimeOut -int 1
+- sudo defaults write /System/Library/LaunchDaemons/com.apple.diskarbitrationd ExitTimeOut -int 1
+- sudo defaults write /System/Library/LaunchAgents/com.apple.coreservices.appleid.authentication ExitTimeOut -int 1
