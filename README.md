@@ -53,7 +53,7 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 - defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
-# Spring loading for directories
+## Spring loading for directories
 - defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 - defaults write NSGlobalDomain com.apple.springing.delay -float 0
 
@@ -117,7 +117,7 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.screensaver askForPassword -int 1
 - defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Enable AirDrop over Ethernet and on unsupported Macs
+## Enable AirDrop over Ethernet and on unsupported Macs
 - defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Increase sound quality for Bluetooth
