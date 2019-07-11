@@ -8,7 +8,7 @@ Mac OS defaultswrite commands for GUI improvements
 - defaults write com.apple.LaunchServices LSQuarantine -bool false
 - defaults write com.apple.CrashReporter DialogType none
 
-# Finder Tweaks
+## Finder Tweaks
 ### Desktop Settings
 - defaults write com.apple.finder CreateDesktop -bool false
 - defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
