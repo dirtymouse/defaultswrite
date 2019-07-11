@@ -137,3 +137,10 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 ## Screen Sharing
 - defaults write com.apple.ScreenSharing controlObserveQuality 2
 - defaults write com.apple.ScreenSharing 'NSToolbar Configuration ControlToolbar' -dict-add 'TB Item Identifiers' '(Scale,Control,Share,Curtain,Capture,FullScreen,GetClipboard,SendClipboard,Quality)'
+
+## Disk Space Alerts
+- defaults write com.apple.diskspaced checkAllVolumes 0
+- defaults write com.apple.diskspaced debugLog 1
+- defaults write com.apple.diskspaced warningInterval 3600
+- defaults write com.apple.diskspaced freeSpaceWarningLevel 1
+- defaults write com.apple.diskspaced minFreeSpace 5
