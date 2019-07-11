@@ -1,5 +1,5 @@
 # defaultswrite
-Mac OS defaultswrite commands for GUI improvements
+Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Choose only what you need)
 
 ## TimeMachine
 - defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
