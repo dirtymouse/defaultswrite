@@ -15,9 +15,9 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 - defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 - defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
-### Sidebar icon size
+#### Sidebar icon size
 - defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
-### Browser Settings
+#### Browser Settings
 - defaults write com.apple.finder QuitMenuItem -bool true
 - defaults write com.apple.finder ShowStatusBar -bool true
 - defaults write com.apple.finder ShowPathbar -bool true
@@ -26,14 +26,35 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 - defaults write com.apple.finder NewWindowTarget -string "PfDe"
 - defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
-### Animations
+#### Animations
 - defaults write com.apple.finder DisableAllAnimations -bool true
-### Behaviour
+#### Behaviour
 - defaults write com.apple.finder AppleShowAllFiles -bool true
 - defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
-### Alerts
+#### Alerts
 - defaults write com.apple.finder WarnOnEmptyTrash -bool false
 - defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+#### Dock Size
+- defaults write com.apple.dock tilesize -int 2
+- defaults write com.apple.dock tilesize -int 36
+#### Dock Behaviour
+- defaults write com.apple.dock pinning -string end
+- defaults write com.apple.dock mouse-over-hilite-stack -bool true
+- defaults write com.apple.dock mineffect -string "scale"
+- defaults write com.apple.dock minimize-to-application -bool true
+- defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+- defaults write com.apple.dock show-process-indicators -bool true
+- defaults write com.apple.dock static-only -bool true
+- defaults write com.apple.dock launchanim -bool false
+- defaults write com.apple.dock expose-animation-duration -float 0.1
+- defaults write com.apple.dock expose-group-by-app -bool false
+- defaults write com.apple.dock dashboard-in-overlay -bool true
+- defaults write com.apple.dock mru-spaces -bool false
+- defaults write com.apple.dock autohide-delay -float 0
+- defaults write com.apple.dock autohide-time-modifier -float 0
+- defaults write com.apple.dock autohide -bool true
+- defaults write com.apple.dock showhidden -bool true
+- defaults write com.apple.dock show-recents -bool false
 
 ## Save Dialog Options
 - defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -75,28 +96,6 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 ## Disable Application state on Restart or Boot
 - defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 - defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
-
-## Dock
-- defaults write com.apple.dock tilesize -int 2
-- defaults write com.apple.dock tilesize -int 36
-
-- defaults write com.apple.dock pinning -string end
-- defaults write com.apple.dock mouse-over-hilite-stack -bool true
-- defaults write com.apple.dock mineffect -string "scale"
-- defaults write com.apple.dock minimize-to-application -bool true
-- defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
-- defaults write com.apple.dock show-process-indicators -bool true
-- defaults write com.apple.dock static-only -bool true
-- defaults write com.apple.dock launchanim -bool false
-- defaults write com.apple.dock expose-animation-duration -float 0.1
-- defaults write com.apple.dock expose-group-by-app -bool false
-- defaults write com.apple.dock dashboard-in-overlay -bool true
-- defaults write com.apple.dock mru-spaces -bool false
-- defaults write com.apple.dock autohide-delay -float 0
-- defaults write com.apple.dock autohide-time-modifier -float 0
-- defaults write com.apple.dock autohide -bool true
-- defaults write com.apple.dock showhidden -bool true
-- defaults write com.apple.dock show-recents -bool false
 
 ## Dashboard
 - defaults write com.apple.dashboard mcx-disabled -bool true
