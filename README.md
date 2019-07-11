@@ -110,6 +110,8 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write -g NSScrollAnimationEnabled -bool false
 - defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 - defaults write -g ApplePersistence -bool false
+- defaults write -g AppleInterfaceStyle -string "Dark"
+- defaults write com.apple.Siri StatusMenuVisible -bool false
 
 ## Better Security
 - defaults write com.apple.screensaver askForPassword -int 1
@@ -118,9 +120,17 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 ## Enable AirDrop over Ethernet and on unsupported Macs
 - defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
+## Disable the built-in captive portal (use your browser instead)
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
+
 # Increase sound quality for Bluetooth
 - defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 ## Enable full keyboard access for all controls
 - defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+## Sound Settings
+- defaults write NSGlobalDomain com.apple.sound.beep.feedback -int 0
+- defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
+- defaults write NSGlobalDomain com.apple.sound.beep.volume -float 0.0
 
