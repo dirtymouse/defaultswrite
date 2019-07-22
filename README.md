@@ -9,6 +9,11 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write com.apple.LaunchServices LSQuarantine -bool false
 - defaults write com.apple.CrashReporter DialogType none
 
+## Disable Auto Save, Versions in built-in apps
+- defaults write -g ApplePersistence -bool no
+- defaults write -app textedit AutosavingDelay -int 0
+- defaults write -app 'preview' ApplePersistence -bool no
+
 ## Finder Tweaks
 #### Desktop Settings
 - defaults write com.apple.finder CreateDesktop -bool false
@@ -109,7 +114,6 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 - defaults write -g NSWindowResizeTime -float 0.001
 - defaults write -g NSScrollAnimationEnabled -bool false
 - defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
-- defaults write -g ApplePersistence -bool false
 - defaults write -g AppleInterfaceStyle -string "Dark"
 - defaults write com.apple.Siri StatusMenuVisible -bool false
 
