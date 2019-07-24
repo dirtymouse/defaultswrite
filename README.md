@@ -141,6 +141,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 
 ## Screen Sharing
 - defaults write com.apple.ScreenSharing controlObserveQuality 2
+  (1=black and white, 2=grey scale, 3=8 bit color, 4=16 bit color, 5=full color)
 - defaults write com.apple.ScreenSharing 'NSToolbar Configuration ControlToolbar' -dict-add 'TB Item Identifiers' '(Scale,Control,Share,Curtain,Capture,FullScreen,GetClipboard,SendClipboard,Quality)'
 
 ## Disk Space Alerts (use with Caution)
