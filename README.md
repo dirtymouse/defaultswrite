@@ -128,7 +128,7 @@ Mac OS defaultswrite commands for GUI improvements, perform in the terminal (Cho
 ## Disable the built-in captive portal (use your browser instead)
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 
-# Increase sound quality for Bluetooth
+## Increase sound quality for Bluetooth
 - defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 ## Enable full keyboard access for all controls
